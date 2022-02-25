@@ -1,0 +1,528 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background_white: #eef4f7;
+  --header_color: #ff9800;
+  --off_black: #242527;
+  /* --OCC_font_header: 'Bangers', cursive;
+  --OCC_font_desc: 'Heebo', sans-serif; */
+}
+
+/********** GENERAL **********/
+
+body {
+    background-color: var(--background_white);
+}
+
+hr {
+    width: 55%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b7d0e2;
+}
+
+form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--header_color);
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+h2 {
+    color: var(--header_color);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/********** HERO **********/
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.hero_photo {
+    /* background-size: contain; */
+    width: 100%;
+    max-height: 100%;
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px var(--off_black);
+    color: var(--header_color);
+
+}
+
+
+
+/********** UPHOLSTERY **********/
+
+.upholstery_container {
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+/* .upholstery_intro {
+    padding-top: 1.25rem;
+} */
+
+.furniture_container {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 0rem 1rem 1rem;
+    height: auto;
+}
+
+.furniture_photo_grid {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.furniture_text{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.accessories_container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+}
+
+.accessories_photo_grid {
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.accessories_text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+}
+
+.desc_headers {
+    font-size: 2.5rem;
+}
+
+.desc {
+    padding-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 70%;
+    max-width: 33.33%;
+    padding: 0rem 0.5rem 1rem 0.5rem;
+}
+  
+.column img {
+    margin-top: 1rem;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+
+/********** ABOUT ME **********/
+
+.about_me_container {
+    height: auto;
+    display: block;
+}
+
+/* .about_me_intro {
+} */
+
+.photo_text_container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2.5rem;
+}
+
+.me {
+    width: 50%;
+    height: auto;
+    max-height: 65vh;
+    padding: 0rem 2rem 0rem 4rem;
+}
+
+.aboutMeText {
+    width: 50%;
+    padding: 0rem 4rem 0rem 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.testimonial_container {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+}
+
+.testimonial_headers {
+    color: var(--header_color);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.testimonial_text {
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.custom, .restoration, .guarantee {
+    height: 15vh;
+    width: 33.33%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.quote {
+    padding: 1rem 0rem 0.5rem 0rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.quote_owner {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+/********** BEFORE & AFTER **********/
+
+.before_after_container {
+    padding-bottom: 2rem;
+}
+
+.before_after_text {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 2rem 25rem 1rem 25rem;
+}
+
+.slider_container { 
+    height: 73.5vw;
+    margin: 1vw auto;
+    max-height: 750px;
+    max-width: 575px;
+    overflow: hidden;
+    width: 98vw;
+}
+
+.slider_container figure { 
+    background-image: url(./assets/after.jpg);
+    background-size: cover;
+    font-size: 0;
+    height: 100%;
+    margin: 0; 
+    position: relative;
+    width: 100%; 
+}
+
+#compare {
+    background-image: url(./assets/before.jpg);
+    background-size: cover;
+    bottom: 0;
+    border-right: 5px solid rgba(255,255,255,0.7);
+    box-shadow: 10px 0 15px -13px #000;
+    height: 100%;
+    max-width: 98.6%;
+    min-width: 0.6%;
+    overflow: visible;
+    position: absolute;
+    width: 50%; 
+    animation: first 2s 1 normal ease-in-out 0.1s; 
+    -webkit-animation: first 2s 1 normal ease-in-out 0.1s; 
+}
+
+input#slider {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none; 
+    background: transparent;
+    cursor: col-resize;
+    height: 100vw;
+    left: 0;
+    margin: 0;
+    outline: none; 
+    padding: 0;
+    position: relative;
+    top: -100vw;
+    width: 100%;
+}
+
+input#slider::-moz-range-track { 
+    background: transparent; 
+}
+
+input#slider::-ms-track {
+    border: none; 
+    background-color: transparent;
+    height: 100vw; 
+    left: 0; 
+    outline: none; 
+    position: relative;
+    top: -100vw; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: col-resize;
+    color:transparent;
+}
+
+input#slider::-ms-fill-lower {
+    background-color:transparent;
+}
+
+input#slider::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    height: 100vw;
+    width: 0.5%;
+    opacity: 0;
+}
+
+input#slider::-moz-range-thumb {
+    -moz-appearance: none;
+    height: 100vw;
+    width: 0.5%;
+    opacity: 0;
+}   
+
+input#slider::-ms-thumb {
+    height: 100vw;
+    width: 0.5%; 
+    opacity:0;
+}
+
+input#slider::-ms-tooltip {
+    display:none;
+}
+
+#compare::before {
+    background: url(https://webdevtrick.com/wp-content/uploads/comparision.png) no-repeat scroll 0 center transparent;
+    background-size:contain;
+    content: " ";
+    float: right;
+    height: 100%;
+    margin-right: -34px;
+    position: relative;
+    top:0;
+    width: 64px;
+}
+
+@keyframes first {
+    0% {width: 0%; }
+    50% {width: 80%; }
+    100% {width: 50%; }
+}
+
+@-webkit-keyframes first {
+    0% {width: 0%; }
+    50% {width: 80%; }
+    100% {width: 50%; }
+}
+
+
+
+/********** CONTACT ME **********/
+
+.contact_me_container {
+    height: auto;
+    display: block;
+}
+
+/* .contact_me_intro {
+    padding-top: 2rem;
+} */
+
+.contact_me_welcome  {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 2rem 0rem 2rem 0rem;
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    margin: 0.75rem 0;
+    padding: 1rem;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 1.10rem;
+
+}
+
+form button {
+    padding: 1rem;
+    background: var(--off_black);
+    color: white;
+    font-size: 1.25rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 12.5rem;
+    margin: 1.75rem auto 0;
+    border-radius: 3rem;
+}
+
+form button:hover {
+    background: var(--header_color);
+}
+
+form textarea {
+    height: 12rem;
+    min-height: 12rem;
+    max-height: 12rem;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+
+
+/********** FOOTER **********/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    background-color: var(--off_black);
+}
+
+.copyright {
+    
+    color: var(--background_white);
+    font-weight: bold;
+}
+
+
+
+/********** MOBILE **********/
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+/*************** CAROUSEL ****************/
+.slider {
+    width: 45vw;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.slider .photos {
+    position: relative;
+    height: 95vh;
+}
+
+.slider .photos img {
+    width: 100%;
+    max-height: 95vh;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slider .photos img.shown {
+    opacity: 1;
+}
+
+.prev:before,
+.next:before {
+  color: #fff;
+  font-size: 100px;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+}
+
+.prev:before {
+  content: '<';
+  left: 0;
+}
+
+.next:before {
+  content: '>';
+  right: 0;
+}
+
