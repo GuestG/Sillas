@@ -188,7 +188,7 @@ h2 {
 }
 
 .me {
-    width: 50%;
+    width: auto;
     height: auto;
     max-height: 65vh;
     padding: 0rem 2rem 0rem 4rem;
