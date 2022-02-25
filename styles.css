@@ -167,6 +167,7 @@ h2 {
     margin-top: 1rem;
     vertical-align: middle;
     width: 100%;
+    border-radius: 10%;
 }
 
 
@@ -176,6 +177,7 @@ h2 {
 .about_me_container {
     height: auto;
     display: block;
+
 }
 
 /* .about_me_intro {
@@ -188,10 +190,13 @@ h2 {
 }
 
 .me {
-    width: auto;
+    /* 1280x1127*/
+    /* border-radius: 10%; */
+    max-width: 1280px;
     height: auto;
     max-height: 65vh;
     padding: 0rem 2rem 0rem 4rem;
+
 }
 
 .aboutMeText {
@@ -261,6 +266,7 @@ h2 {
     max-width: 575px;
     overflow: hidden;
     width: 98vw;
+    border-radius: 10%;
 }
 
 .slider_container figure { 
@@ -501,6 +507,7 @@ form textarea {
     left: 0;
     opacity: 0;
     transition: opacity 1s;
+    border-radius: 10%;
 }
 
 .slider .photos img.shown {
