@@ -177,21 +177,23 @@
             Contact me and lets start a project together!
         </p>
         <div class="form_container">
-            <form action="contact.php" method="post">
-                <div class="elem-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20}
+            <form action="https://formsubmit.co/5ac394810c6d5837017ffeab0e2f3f7c" method="POST">
+                <!-- <div class="elem-group"> -->
+                    <!-- <label for="name">Your Name</label> -->
+                    <input type="hidden" name="_subject" value="Email from Maricella's Design.">
+                    <input type="text" id="name" name="name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20}
                         required>
-                </div>
-                <div class="elem-group">
-                    <label for="email">Your E-mail</label>
-                    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-                </div>
-                <div class="elem-group">
-                    <label for="message">Write your message</label>
-                    <textarea id="message" name="visitor_message" placeholder="Your Message."
+                <!-- </div>
+                <div class="elem-group"> -->
+                    <!-- <label for="email">Your E-mail</label> -->
+                    <input type="email" id="email" name="email" placeholder="john.doe@email.com" required>
+                <!-- </div>
+                <div class="elem-group"> -->
+                    <input type="hidden" name="_next" value="https://maricellasdesign.com/">
+                    <!-- <label for="message">Write your message</label> -->
+                    <textarea type="text" id="message" name="message" placeholder="Your Message."
                         required></textarea>
-                </div>
+                <!-- </div> -->
                 <button type="submit">Send Message</button>
             </form>
             <!-- <form action="results.html" method="POST">
