@@ -78,7 +78,9 @@ h2 {
     z-index: 2;
     font-size: 5rem;
     font-weight: bold;
-    text-shadow: 2px 2px var(--off_black);
+    text-shadow: 4px 4px var(--off_black);
+
+    /* text-shadow: 2px 2px var(--background_white); */
     color: var(--header_color);
 
 }
@@ -383,7 +385,7 @@ h2 {
     }
     
     .me {
-        max-height: fit-content;
+        max-height: 45rem;
         max-width: auto;
         padding: 0rem 2rem 0rem 2rem;
     
