@@ -79,7 +79,7 @@ h2 {
     font-size: 6rem;
     font-weight: bold;
     padding:0rem;
-    -webkit-text-stroke: 0.12rem #000;
+    -webkit-text-stroke: 0.10rem #000;
     color: var(--background_white);
 
 }
@@ -384,7 +384,7 @@ h2 {
     }
     
     .me {
-        max-height: auto;
+        max-height: 35rem;
         max-width: auto;
         padding: 0rem 2rem 0rem 2rem;
     
